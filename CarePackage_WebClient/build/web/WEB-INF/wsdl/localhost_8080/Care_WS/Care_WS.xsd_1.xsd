@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Care.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Care.me.org/">
+
+<xs:element name="donate" type="tns:donate"/>
+
+<xs:element name="donateResponse" type="tns:donateResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="purchase" type="tns:purchase"/>
+
+<xs:element name="purchaseResponse" type="tns:purchaseResponse"/>
+
+<xs:element name="rescue" type="tns:rescue"/>
+
+<xs:element name="rescueResponse" type="tns:rescueResponse"/>
+
+<xs:element name="retrieveDonation" type="tns:retrieveDonation"/>
+
+<xs:element name="retrieveDonationResponse" type="tns:retrieveDonationResponse"/>
+
+<xs:element name="retrievePurchase" type="tns:retrievePurchase"/>
+
+<xs:element name="retrievePurchaseResponse" type="tns:retrievePurchaseResponse"/>
+
+<xs:element name="retrievePurchaseSum" type="tns:retrievePurchaseSum"/>
+
+<xs:element name="retrievePurchaseSumResponse" type="tns:retrievePurchaseSumResponse"/>
+
+<xs:element name="retrieveRescue" type="tns:retrieveRescue"/>
+
+<xs:element name="retrieveRescueResponse" type="tns:retrieveRescueResponse"/>
+
+<xs:element name="retrieveVolunteer" type="tns:retrieveVolunteer"/>
+
+<xs:element name="retrieveVolunteerResponse" type="tns:retrieveVolunteerResponse"/>
+
+<xs:element name="saveDonate" type="tns:saveDonate"/>
+
+<xs:element name="saveDonateResponse" type="tns:saveDonateResponse"/>
+
+<xs:element name="volunteer" type="tns:volunteer"/>
+
+<xs:element name="volunteerResponse" type="tns:volunteerResponse"/>
+
+<xs:complexType name="retrievePurchaseSum">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="retrievePurchaseSumResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volunteer">
+<xs:sequence>
+<xs:element name="site" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volunteerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveRescue">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="retrieveRescueResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="donate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="donateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveDonation">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="retrieveDonationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrieveVolunteer">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="retrieveVolunteerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveDonate">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="amount" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveDonateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchase">
+<xs:sequence>
+<xs:element name="itemName" type="xs:string" minOccurs="0"/>
+<xs:element name="quantity" type="xs:string" minOccurs="0"/>
+<xs:element name="price" type="xs:string" minOccurs="0"/>
+<xs:element name="discount" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="purchaseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="retrievePurchase">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="retrievePurchaseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rescue">
+<xs:sequence>
+<xs:element name="site_id" type="xs:string" minOccurs="0"/>
+<xs:element name="evacuee_name" type="xs:string" minOccurs="0"/>
+<xs:element name="condition" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rescueResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
